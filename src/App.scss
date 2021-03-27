@@ -1,0 +1,83 @@
+@import './styles/globalVars';
+
+.App {
+  height: auto;
+  background-color: #ececec;
+  font-family: 'Merriweather Sans',sans-serif;
+ 
+}
+
+
+a{
+  text-decoration: none !important;
+}
+@mixin arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  
+  width: 40px;
+  height: 40px;
+  text-align: left;
+ 
+}
+
+.slick-prev::before, .slick-next::before{
+  font-size: 60px !important; 
+  
+  opacity: 1 !important;  
+}
+
+.slick-disabled{
+  display: none !important;
+}
+
+.slides{
+  .slick-next{
+    @include arrow();
+    text-align: left;
+    
+    
+  }
+
+  
+  .slick-prev{
+    padding-left: 40px;
+    @include arrow();
+  }
+}
+
+.slick-next{
+  margin-right: 55px !important;
+}
+
+.carousel{
+  width: 100%;
+  .slick-dots{
+    position: relative;
+    top:-40px;
+    font-size: 20px;
+    li button::before{
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+      color: aqua;
+    }
+  }
+  
+} 
+
+@media screen and(max-width:900px){
+  .carousel{
+    margin-bottom: -5%;
+  }
+}
+
+.coverSlider{
+  width: 100%;
+ //min-height: 480px;
+  padding-top:45%;
+  background: url('https://picsum.photos/id/242/720/1080') center center no-repeat;
+  background-size: cover;
+  
+} 

@@ -1,0 +1,12 @@
+.imageDisplay{
+    .slick-slider{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+.dotImage{
+    img {width:'100px' !important;
+    height:'100px' !important;}
+}

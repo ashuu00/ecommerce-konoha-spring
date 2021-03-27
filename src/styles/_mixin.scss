@@ -1,0 +1,43 @@
+@mixin hoverCard {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px 5px #8b8b8b;
+    background-color: white;
+    transition: ease-in 0.25s;
+    cursor: pointer;
+}
+
+@mixin picCard{
+   min-width: 160px;
+   width: 320px;
+   display: flex ;
+    
+}
+
+@mixin sticky{
+    position: sticky;
+    top:0;
+}
+
+@mixin mediaHeight($class,$h1,$h2,$h3){
+    @media screen and (max-width:1200px){
+        #{$class}{
+            height: $h1 !important;
+        }
+    }
+    @media screen and (max-width:800px){
+        #{$class}{
+            height: $h2 !important;
+        }
+    }
+    @media screen and (max-width:400px){
+        #{$class}{
+            height: $h3 !important;
+        }
+    }
+
+}
+
+@mixin shadowEffect(){
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(90, 82, 82);
+}

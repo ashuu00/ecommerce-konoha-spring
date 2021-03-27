@@ -1,0 +1,22 @@
+@import '../../styles/globalVars';
+@import '../../styles/mixin';
+.myCard{
+    width: 100%;
+    background-color: transparent !important;
+    height: 50vh;
+    border: none;
+
+}
+
+.productCard{
+        
+    
+        &:focus{
+            outline: none !important;
+        }
+        &:hover{
+            @include hoverCard();
+        }
+
+
+}

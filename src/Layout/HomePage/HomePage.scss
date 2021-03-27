@@ -1,0 +1,48 @@
+@import '../../styles/globalVars';
+
+
+.App {
+    height: auto;
+    //min-height: 100vh;
+    background-color: #ececec;
+   
+  }
+
+@mixin arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    
+    width: 40px;
+    height: 40px;
+    text-align: left;
+   
+  }
+  
+
+  
+    
+  
+  
+  .carousel{
+    width: 100%;
+    
+    
+    }
+    
+  
+  
+  @media screen and(max-width:900px){
+    .carousel{
+      margin-bottom: -5%;
+    }
+  }
+  
+  .coverSlider{
+    width: 100%;
+   //min-height: 480px;
+    padding-top:45%;
+    background: url('https://picsum.photos/id/242/720/1080') center center no-repeat;
+    background-size: cover;
+    
+  } 

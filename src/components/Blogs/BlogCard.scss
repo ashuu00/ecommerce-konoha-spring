@@ -1,0 +1,41 @@
+.card-in-pic{
+    position: absolute;
+    bottom: 38px;
+    padding: 20px;
+    background: #fff;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    border: 3px solid rgb(180, 173, 165);
+    h2,h3{
+    transition: color .6s ease-in;}
+    &:hover{
+        cursor: pointer;
+        transition: background-color .6s ease-in;
+        background-color: #285E61;
+        h2,h3{
+            color: #F0FFF4;
+        }
+    }
+    
+}
+
+.slider-contain{
+    position: relative;
+}
+
+.blog-slider-card{
+    background: url('https://picsum.photos/id/137/200/300') center center no-repeat;
+    background-size: cover;
+    padding-top: 120%;
+    border-radius: 5px;
+   
+   
+}
+
+.blog-dates{
+    letter-spacing: 3px;
+    
+}
